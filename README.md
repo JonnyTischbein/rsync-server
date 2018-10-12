@@ -5,12 +5,12 @@ The script will connects via `ssh` and uses `rsync` to copy files (if necessary)
 
 If no ssh key is used a password prompt will be needed to fill before syncing.
 
-##HowTo
+## HowTo
 1. Download the script
 2. Set Config Variables in script (see below)
 3. Make it runnable `chmod +x sync-folder.sh`
 
-##Config
+## Config
 
 |Config|Description|
 |---|---|
@@ -22,7 +22,7 @@ If no ssh key is used a password prompt will be needed to fill before syncing.
 |PERMGRP|groups as in `PERMUSER`|
 |EXCLUDE|select which folder in local directory will be ignored|
 
-##Rsync flags
+## Rsync flags
 
 |Flag|Description|
 |---|---|
