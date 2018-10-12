@@ -8,7 +8,7 @@ If no ssh key is used a password prompt will be needed to fill before syncing.
 ##HowTo
 1. Download the script
 2. Set Config Variables in script (see below)
-3. Make it runnable `chmod +x sync-server.sh`
+3. Make it runnable `chmod +x sync-folder.sh`
 
 ##Config
 
@@ -27,5 +27,5 @@ If no ssh key is used a password prompt will be needed to fill before syncing.
 |Flag|Description|
 |---|---|
 |`--chown`|setting permissions user/group|
-|`-update`|only transfer new files|
+|`--update`|only transfer new files|
 |`-O`|prevent updating timestamp (may leads to errors without)|
