@@ -17,14 +17,14 @@ LOCALDIR="/home/user/dir/"
 REMOTEDIR="/var/www/dir"
 PERMUSER="www-data"
 PERMGRP="www-data"
-EXCLUDE=(".git*" "folder2" "file3" ".aaa*")
+EXCLUDE=(".hidenfiles*" "folder" "file")
 
 for EXC in "${EXCLUDE[@]}"
 do
 	EXCLUDE_STRING+="--exclude=$EXC "
 done
 
-echo "Updating friendica root.."
+echo "Updating $REMOTEDIR .."
 rsync -arzO --update --progress --chown=$PERMUSER:$PERMGRP $LOCALDIR $USER@$SERVER:$REMOTEDIR $EXCLUDE_STRING $DRY
 
 if [ ! -z "$ERROR" ];
